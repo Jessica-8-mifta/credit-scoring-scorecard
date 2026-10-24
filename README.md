@@ -96,7 +96,6 @@ check outputs
 - The cutoff was chosen on the holdout set; in practice a separate validation sample should be used.
 - Only six variables are in the scorecard. `DebtRatio`, open credit lines, dependents, and real estate loans were left out and could be added with the same binning and monotonicity checks.
 - No reject inference: the data contains only approved borrowers' outcomes.
-- The Random Forest was not tuned.
 - The data is anonymized consumer credit data, not SME lending, and the target is a two-year delinquency flag, not a regulatory probability of default.
 
 ## Repository structure
