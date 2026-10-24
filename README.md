@@ -2,7 +2,7 @@
 
 An interpretable credit scorecard that predicts serious delinquency within two years, built with Weight of Evidence (WoE) binning and logistic regression, benchmarked against a Random Forest, and converted into a points-based score with an approval cutoff analysis.
 
-**Author:** Miftahul Jannat Jessica | BSc Statistics (Honours), SUST
+**Author:** Miftahul Jannat Jessica
 
 ---
 
