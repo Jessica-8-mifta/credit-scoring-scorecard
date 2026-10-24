@@ -86,7 +86,8 @@ Returns diminish beyond about 30% rejection: moving from 40% to 50% rejection lo
 
 ## Dashboard
 
-[Insert screenshot of the Excel PivotTable dashboard here: bad rate by score band, and approval rate vs bad rate by cutoff, built from `outputs/score_bands.csv` and `outputs/cutoff_table.csv`.]
+outputs/dashboard_preview.png
+
 
 ## Limitations
 
