@@ -87,7 +87,7 @@ Returns diminish beyond about 30% rejection: moving from 40% to 50% rejection lo
 ## Dashboard
 
 check outputs
-![Dashboard](outputs/dashboard.png)
+![Dashboard](outputs/dashboard_preview.png)
 
 
 ## Limitations
