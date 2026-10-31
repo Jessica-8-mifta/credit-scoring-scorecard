@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.ipynb_checkpoints/
+.env
+.env.*
+kaggle.json
+data/
+runs/
+*.joblib
+*.pkl
+*.csv.zip
+train.csv*
+cs-training.csv*
+build/
+dist/

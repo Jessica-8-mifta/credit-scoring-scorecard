@@ -1,0 +1,141 @@
+{
+  "status": "computed_synthetic_demonstration",
+  "data_sha256": "78741c3e1b1e311ed77cc61fab733aa2c6705e4f354004eb5acb9e57ea8578ba",
+  "policy": {
+    "selection_split": "validation",
+    "selection_rule": "predeclared score quantile; not optimized for profit or bad rate",
+    "requested_validation_reject_share": 0.3,
+    "cutoff": 522.7913056234191,
+    "null_cutoff_means": "accept all",
+    "tie_policy": "accept score >= cutoff",
+    "validation": {
+      "applicants": 400,
+      "approved": 280,
+      "rejected": 120,
+      "approval_rate": 0.7,
+      "realized_reject_share": 0.3,
+      "approved_bads": 29,
+      "rejected_bads": 43,
+      "rejected_goods": 77,
+      "approved_bad_rate": 0.10357142857142858
+    },
+    "test": {
+      "applicants": 400,
+      "approved": 292,
+      "rejected": 108,
+      "approval_rate": 0.73,
+      "realized_reject_share": 0.27,
+      "approved_bads": 28,
+      "rejected_bads": 44,
+      "rejected_goods": 64,
+      "approved_bad_rate": 0.0958904109589041
+    }
+  },
+  "splits": {
+    "validation": {
+      "scorecard": {
+        "auc": 0.7538956639566397,
+        "gini": 0.5077913279132793,
+        "ks": 0.407520325203252,
+        "brier": 0.12372659118348174,
+        "log_loss": 0.4048240847099798
+      },
+      "random_forest": {
+        "auc": 0.7409383468834688,
+        "gini": 0.48187669376693765,
+        "ks": 0.3848238482384824,
+        "brier": 0.13072998517459145,
+        "log_loss": 0.41886597949740534
+      },
+      "constant_training_prevalence": {
+        "auc": 0.5,
+        "gini": 0.0,
+        "ks": 0.0,
+        "brier": 0.1476,
+        "log_loss": 0.4713934868100941
+      },
+      "score_psi_from_training": 0.023463377749713656,
+      "neutral_woe_bin_usage": {
+        "RevolvingUtilizationOfUnsecuredLines": 0,
+        "age": 0,
+        "MonthlyIncome": 0,
+        "NumberOfTime30-59DaysPastDueNotWorse": 0,
+        "NumberOfTime60-89DaysPastDueNotWorse": 0,
+        "NumberOfTimes90DaysLate": 0
+      }
+    },
+    "test": {
+      "scorecard": {
+        "auc": 0.7993733062330624,
+        "gini": 0.5987466124661247,
+        "ks": 0.46612466124661245,
+        "brier": 0.11621127236499051,
+        "log_loss": 0.37563063852330075
+      },
+      "random_forest": {
+        "auc": 0.798484078590786,
+        "gini": 0.5969681571815719,
+        "ks": 0.5182926829268293,
+        "brier": 0.12537513921585267,
+        "log_loss": 0.40202884255935234
+      },
+      "constant_training_prevalence": {
+        "auc": 0.5,
+        "gini": 0.0,
+        "ks": 0.0,
+        "brier": 0.1476,
+        "log_loss": 0.4713934868100941
+      },
+      "score_psi_from_training": 0.027056421182398403,
+      "neutral_woe_bin_usage": {
+        "RevolvingUtilizationOfUnsecuredLines": 0,
+        "age": 0,
+        "MonthlyIncome": 0,
+        "NumberOfTime30-59DaysPastDueNotWorse": 0,
+        "NumberOfTime60-89DaysPastDueNotWorse": 0,
+        "NumberOfTimes90DaysLate": 0
+      },
+      "forest_minus_scorecard_auc": -0.0008892276422763912
+    }
+  },
+  "scorecard_checks": {
+    "validation": {
+      "max_exact_points_error": 1.1368683772161603e-13,
+      "max_rounded_points_error": 1.8506506534349683,
+      "rounded_error_bound": 3.0
+    },
+    "test": {
+      "max_exact_points_error": 1.1368683772161603e-13,
+      "max_rounded_points_error": 1.735927530939307,
+      "rounded_error_bound": 3.0
+    }
+  },
+  "test_auc_uncertainty": {
+    "method": "paired feature-duplicate cluster percentile bootstrap",
+    "requested_repetitions": 100,
+    "valid_repetitions": 100,
+    "seed": 42,
+    "confidence_level": 0.95,
+    "scorecard_auc_interval": [
+      0.7427145463449046,
+      0.8600322999964047
+    ],
+    "forest_auc_interval": [
+      0.7311205422508177,
+      0.8535744796961091
+    ],
+    "forest_minus_scorecard_auc_interval": [
+      -0.029195210710136095,
+      0.030423455223603457
+    ],
+    "note": "Conditional on these fitted models and this split; does not include retraining uncertainty. Feature grouping is not verified borrower identity or temporal independence."
+  },
+  "limitations": [
+    "Random grouped split, not out-of-time validation.",
+    "Feature equality is a duplicate safeguard, not verified borrower identity.",
+    "The final test is not for repeated tuning; changes after inspection require a new evaluation design.",
+    "No profitability optimum, production lending suitability, reject inference or subgroup fairness validation is established.",
+    "Calibration is assessed; no additional calibration model is fitted.",
+    "Historical results belong to a different split and manually reviewed bins; do not merge them with these results."
+  ]
+}

@@ -1,0 +1,7 @@
+variable,training_iv,iv_above_0_5_review_flag,regular_bin_woe_monotonic,sparse_bins,note
+RevolvingUtilizationOfUnsecuredLines,0.932655411281979,True,False,0,"IV flag is a diagnostic, not proof of leakage. Missing-income bin is excluded from ordered monotonicity check."
+age,0.1838858145033621,False,False,0,"IV flag is a diagnostic, not proof of leakage. Missing-income bin is excluded from ordered monotonicity check."
+MonthlyIncome,0.04227409514610596,False,False,0,"IV flag is a diagnostic, not proof of leakage. Missing-income bin is excluded from ordered monotonicity check."
+NumberOfTime30-59DaysPastDueNotWorse,0.047912045768257916,False,False,2,"IV flag is a diagnostic, not proof of leakage. Missing-income bin is excluded from ordered monotonicity check."
+NumberOfTime60-89DaysPastDueNotWorse,0.10056481078660467,False,False,2,"IV flag is a diagnostic, not proof of leakage. Missing-income bin is excluded from ordered monotonicity check."
+NumberOfTimes90DaysLate,0.06161430355521911,False,False,2,"IV flag is a diagnostic, not proof of leakage. Missing-income bin is excluded from ordered monotonicity check."

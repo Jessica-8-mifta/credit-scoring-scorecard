@@ -1,0 +1,153 @@
+{
+  "source_file": "synthetic_fixture.csv",
+  "source_sha256": "78741c3e1b1e311ed77cc61fab733aa2c6705e4f354004eb5acb9e57ea8578ba",
+  "rows_read": 2000,
+  "excluded_missing_age": 0,
+  "excluded_under_18": 0,
+  "eligible_rows": 2000,
+  "eligible_bads": 360,
+  "eligible_bad_rate": 0.18,
+  "missing_fraction_before_imputation": {
+    "RevolvingUtilizationOfUnsecuredLines": 0.0,
+    "age": 0.0,
+    "NumberOfTime30-59DaysPastDueNotWorse": 0.0,
+    "NumberOfTime60-89DaysPastDueNotWorse": 0.0,
+    "NumberOfTimes90DaysLate": 0.0,
+    "DebtRatio": 0.0,
+    "MonthlyIncome": 0.193,
+    "NumberOfOpenCreditLinesAndLoans": 0.0,
+    "NumberRealEstateLoansOrLines": 0.0,
+    "NumberOfDependents": 0.0305
+  },
+  "late_count_90_or_above_replaced_with_missing": {
+    "NumberOfTime30-59DaysPastDueNotWorse": 0,
+    "NumberOfTime60-89DaysPastDueNotWorse": 0,
+    "NumberOfTimes90DaysLate": 0
+  },
+  "predictor_summary": {
+    "RevolvingUtilizationOfUnsecuredLines": {
+      "count": 2000.0,
+      "mean": 0.34598387835426364,
+      "std": 0.2362805885821674,
+      "min": 0.0011387868770386,
+      "25%": 0.15507572768069267,
+      "50%": 0.30473571194978116,
+      "75%": 0.5023117828045188,
+      "max": 1.136652531388591
+    },
+    "age": {
+      "count": 2000.0,
+      "mean": 52.0165,
+      "std": 18.536235425832317,
+      "min": 21.0,
+      "25%": 36.0,
+      "50%": 52.0,
+      "75%": 68.0,
+      "max": 84.0
+    },
+    "NumberOfTime30-59DaysPastDueNotWorse": {
+      "count": 2000.0,
+      "mean": 0.2945,
+      "std": 0.5430628035543422,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 3.0
+    },
+    "NumberOfTime60-89DaysPastDueNotWorse": {
+      "count": 2000.0,
+      "mean": 0.3215,
+      "std": 0.5685942311524537,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 3.0
+    },
+    "NumberOfTimes90DaysLate": {
+      "count": 2000.0,
+      "mean": 0.307,
+      "std": 0.5539895777233657,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 4.0
+    },
+    "DebtRatio": {
+      "count": 2000.0,
+      "mean": 0.5916650512791893,
+      "std": 0.9109521983360542,
+      "min": 0.0168601042534514,
+      "25%": 0.183212848761813,
+      "50%": 0.3428475551876164,
+      "75%": 0.6518926868589495,
+      "max": 23.36505189108732
+    },
+    "MonthlyIncome": {
+      "count": 1614.0,
+      "mean": 5971.234636541954,
+      "std": 4429.2135636882695,
+      "min": 589.2653805350235,
+      "25%": 3111.8160268729143,
+      "50%": 4721.582067518764,
+      "75%": 7588.551813499597,
+      "max": 37496.85766378744
+    },
+    "NumberOfOpenCreditLinesAndLoans": {
+      "count": 2000.0,
+      "mean": 6.0415,
+      "std": 2.544998282539512,
+      "min": 0.0,
+      "25%": 4.0,
+      "50%": 6.0,
+      "75%": 8.0,
+      "max": 19.0
+    },
+    "NumberRealEstateLoansOrLines": {
+      "count": 2000.0,
+      "mean": 1.021,
+      "std": 1.0144326181508478,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 2.0,
+      "max": 6.0
+    },
+    "NumberOfDependents": {
+      "count": 1939.0,
+      "mean": 1.1753481175863847,
+      "std": 1.0756670812910871,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 2.0,
+      "max": 6.0
+    }
+  },
+  "extra_columns_ignored": [],
+  "upstream_lineage": "Only this input file is verified. Earlier sampling or preprocessing cannot be inferred from its filename.",
+  "split_method": "Five stratified feature-group folds: three train, one validation, one test (approximately 60/20/20).",
+  "partitions": {
+    "train": {
+      "rows": 1200,
+      "bads": 216,
+      "bad_rate": 0.18,
+      "distinct_feature_groups": 1200
+    },
+    "validation": {
+      "rows": 400,
+      "bads": 72,
+      "bad_rate": 0.18,
+      "distinct_feature_groups": 400
+    },
+    "test": {
+      "rows": 400,
+      "bads": 72,
+      "bad_rate": 0.18,
+      "distinct_feature_groups": 400
+    }
+  },
+  "duplicate_feature_rows": 0
+}

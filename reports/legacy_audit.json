@@ -1,0 +1,116 @@
+{
+  "status": "historical_saved_outputs_reconciled_not_refitted",
+  "notebook_sha256": "5c39e553d28fd3beb1a56625645738cdc9ff4fc4b2e0951ef7300583e5fec286",
+  "input_filename_in_original_code": "train.csv.zip",
+  "input_rows_from_saved_output": 104805,
+  "raw_data_sha256": null,
+  "holdout_applicants": 31442,
+  "holdout_bads": 2085,
+  "holdout_bad_rate": 0.06631257553590739,
+  "lowest_band_share_of_bads": 0.5309352517985612,
+  "lowest_three_bands_share_of_bads": 0.815347721822542,
+  "reported_rounded_metrics": {
+    "scorecard_auc": 0.853,
+    "scorecard_gini": 0.707,
+    "scorecard_ks": 0.557,
+    "random_forest_auc": 0.866,
+    "score_psi": 0.0009
+  },
+  "policies_explored_on_holdout": [
+    {
+      "requested_holdout_reject_share": 0.0,
+      "realized_reject_share": 0.0,
+      "cutoff": 411.2714879587536,
+      "approved": 31442,
+      "approved_bads": 2085,
+      "approved_bad_rate": 0.0663125755359073
+    },
+    {
+      "requested_holdout_reject_share": 0.05,
+      "realized_reject_share": 0.05002862413332476,
+      "cutoff": 515.4933940949707,
+      "approved": 29869,
+      "approved_bads": 1341,
+      "approved_bad_rate": 0.0448960460678295
+    },
+    {
+      "requested_holdout_reject_share": 0.1,
+      "realized_reject_share": 0.09795814515616041,
+      "cutoff": 539.8587371704556,
+      "approved": 28362,
+      "approved_bads": 988,
+      "approved_bad_rate": 0.0348353430646639
+    },
+    {
+      "requested_holdout_reject_share": 0.15,
+      "realized_reject_share": 0.14859105654856564,
+      "cutoff": 549.7934747362494,
+      "approved": 26770,
+      "approved_bads": 783,
+      "approved_bad_rate": 0.0292491595069107
+    },
+    {
+      "requested_holdout_reject_share": 0.2,
+      "realized_reject_share": 0.19963742764455183,
+      "cutoff": 557.4638774666702,
+      "approved": 25165,
+      "approved_bads": 637,
+      "approved_bad_rate": 0.0253129346314325
+    },
+    {
+      "requested_holdout_reject_share": 0.25,
+      "realized_reject_share": 0.24871191400038162,
+      "cutoff": 564.5535308087184,
+      "approved": 23622,
+      "approved_bads": 488,
+      "approved_bad_rate": 0.0206587079840826
+    },
+    {
+      "requested_holdout_reject_share": 0.3,
+      "realized_reject_share": 0.298454296800458,
+      "cutoff": 571.1646251580117,
+      "approved": 22058,
+      "approved_bads": 388,
+      "approved_bad_rate": 0.0175899900262943
+    },
+    {
+      "requested_holdout_reject_share": 0.35,
+      "realized_reject_share": 0.3499141276000255,
+      "cutoff": 577.1688900467167,
+      "approved": 20440,
+      "approved_bads": 304,
+      "approved_bad_rate": 0.0148727984344422
+    },
+    {
+      "requested_holdout_reject_share": 0.4,
+      "realized_reject_share": 0.39965651040010175,
+      "cutoff": 582.4017763923072,
+      "approved": 18876,
+      "approved_bads": 242,
+      "approved_bad_rate": 0.0128205128205128
+    },
+    {
+      "requested_holdout_reject_share": 0.45,
+      "realized_reject_share": 0.44958972075567716,
+      "cutoff": 587.4662263996211,
+      "approved": 17306,
+      "approved_bads": 203,
+      "approved_bad_rate": 0.0117300358257251
+    },
+    {
+      "requested_holdout_reject_share": 0.5,
+      "realized_reject_share": 0.49910947140767126,
+      "cutoff": 592.2813119665072,
+      "approved": 15749,
+      "approved_bads": 175,
+      "approved_bad_rate": 0.0111118166232776
+    }
+  ],
+  "notes": [
+    "Saved notebook outputs match the aggregate exports; this is not an independent model rerun.",
+    "The original code fits medians, caps and WoE maps on training data.",
+    "Utilization/age cutpoints were typed after training-only exploration; exact source-data provenance is unavailable.",
+    "Cutoffs were derived from holdout score quantiles; all tied scores at a cutoff were accepted.",
+    "Original fitted model, full-precision parameters and points CSV are unavailable; they are not reconstructed from rounded logs."
+  ]
+}

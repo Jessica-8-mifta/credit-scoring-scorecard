@@ -1,0 +1,46 @@
+{
+  "started_utc": "2026-10-31T14:33:42.573946+00:00",
+  "config": {
+    "seed": 42,
+    "random_forest_trees": 30,
+    "bootstrap_repetitions": 100,
+    "illustrative_validation_reject_share": 0.3,
+    "synthetic": true,
+    "logistic_C": 1.0,
+    "random_forest_min_samples_leaf": 50,
+    "smoothing": 0.5,
+    "scorecard_features": [
+      "RevolvingUtilizationOfUnsecuredLines",
+      "age",
+      "MonthlyIncome",
+      "NumberOfTime30-59DaysPastDueNotWorse",
+      "NumberOfTime60-89DaysPastDueNotWorse",
+      "NumberOfTimes90DaysLate"
+    ],
+    "forest_features": [
+      "RevolvingUtilizationOfUnsecuredLines",
+      "age",
+      "NumberOfTime30-59DaysPastDueNotWorse",
+      "NumberOfTime60-89DaysPastDueNotWorse",
+      "NumberOfTimes90DaysLate",
+      "DebtRatio",
+      "MonthlyIncome",
+      "NumberOfOpenCreditLinesAndLoans",
+      "NumberRealEstateLoansOrLines",
+      "NumberOfDependents",
+      "income_missing"
+    ]
+  },
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "joblib": "1.5.3"
+  },
+  "git_commit": "unavailable",
+  "git_dirty": null
+}

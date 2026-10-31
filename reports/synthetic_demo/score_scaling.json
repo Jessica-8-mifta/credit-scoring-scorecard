@@ -1,0 +1,48 @@
+{
+  "base_score": 600,
+  "base_good_bad_odds": 50,
+  "pdo": 20,
+  "factor": 28.85390081777927,
+  "offset": 487.1228762045055,
+  "intercept": -1.5117972557726476,
+  "coefficients": {
+    "RevolvingUtilizationOfUnsecuredLines": -1.0686046526086985,
+    "age": -1.051724244610586,
+    "MonthlyIncome": -0.9513020084330369,
+    "NumberOfTime30-59DaysPastDueNotWorse": -1.10239599494189,
+    "NumberOfTime60-89DaysPastDueNotWorse": -1.1424745208637672,
+    "NumberOfTimes90DaysLate": -0.98040759749098
+  },
+  "score_band_edges": [
+    null,
+    492.21751747696817,
+    512.5414248485692,
+    526.012693638332,
+    535.9064001169288,
+    546.22012612864,
+    556.3975981727081,
+    565.3595034717351,
+    577.8733374469009,
+    591.0217176120323,
+    null
+  ],
+  "outer_null_edges_mean": "minus infinity and plus infinity",
+  "training_medians": {
+    "RevolvingUtilizationOfUnsecuredLines": 0.3043587719639083,
+    "age": 51.0,
+    "NumberOfTime30-59DaysPastDueNotWorse": 0.0,
+    "NumberOfTime60-89DaysPastDueNotWorse": 0.0,
+    "NumberOfTimes90DaysLate": 0.0,
+    "DebtRatio": 0.35050026808928736,
+    "MonthlyIncome": 4695.727733169365,
+    "NumberOfOpenCreditLinesAndLoans": 6.0,
+    "NumberRealEstateLoansOrLines": 1.0,
+    "NumberOfDependents": 1.0,
+    "income_missing": 0.0
+  },
+  "training_caps": {
+    "RevolvingUtilizationOfUnsecuredLines": 0.9337115593336106,
+    "DebtRatio": 3.7143689536430395,
+    "MonthlyIncome": 20153.36434845731
+  }
+}

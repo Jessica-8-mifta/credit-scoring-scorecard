@@ -1,0 +1,68 @@
+{
+  "kind": "hypothetical borrower, not a real person's record",
+  "input": {
+    "RevolvingUtilizationOfUnsecuredLines": 0.35,
+    "age": 40,
+    "MonthlyIncome": 5000,
+    "DebtRatio": 0.3,
+    "NumberOfOpenCreditLinesAndLoans": 5,
+    "NumberRealEstateLoansOrLines": 1,
+    "NumberOfDependents": 1,
+    "NumberOfTime30-59DaysPastDueNotWorse": 0,
+    "NumberOfTime60-89DaysPastDueNotWorse": 0,
+    "NumberOfTimes90DaysLate": 0
+  },
+  "contributions": [
+    {
+      "variable": "RevolvingUtilizationOfUnsecuredLines",
+      "value": 0.35,
+      "bin": "bin_03",
+      "woe": 0.08767768995926156,
+      "points_exact": 91.16075644209766,
+      "points_rounded": 91
+    },
+    {
+      "variable": "age",
+      "value": 40,
+      "bin": "bin_03",
+      "woe": -0.34671530537338513,
+      "points_exact": 77.93581106501513,
+      "points_rounded": 78
+    },
+    {
+      "variable": "MonthlyIncome",
+      "value": 5000,
+      "bin": "bin_04",
+      "woe": 0.28669524275162644,
+      "points_exact": 96.32678691408876,
+      "points_rounded": 96
+    },
+    {
+      "variable": "NumberOfTime30-59DaysPastDueNotWorse",
+      "value": 0,
+      "bin": "bin_00",
+      "woe": 0.12455293080284828,
+      "points_exact": 92.41918656712974,
+      "points_rounded": 92
+    },
+    {
+      "variable": "NumberOfTime60-89DaysPastDueNotWorse",
+      "value": 0,
+      "bin": "bin_00",
+      "woe": 0.20013942604336668,
+      "points_exact": 95.05491950701467,
+      "points_rounded": 95
+    },
+    {
+      "variable": "NumberOfTimes90DaysLate",
+      "value": 0,
+      "bin": "bin_00",
+      "woe": 0.14493898234676106,
+      "points_exact": 92.55747256249857,
+      "points_rounded": 93
+    }
+  ],
+  "score": 545.4549330578445,
+  "rounded_bin_points_sum": 545,
+  "predicted_two_year_delinquency_probability": 0.11695003035231112
+}
